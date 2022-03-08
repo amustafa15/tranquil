@@ -1,0 +1,1550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9315A7527A5E4BE0066158A /* Milestones.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9315A7427A5E4BE0066158A /* Milestones.swift */; };
+		C9315A7627A5E4BE0066158A /* Milestones.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9315A7427A5E4BE0066158A /* Milestones.swift */; };
+		C935D4DB279E33CF00B46454 /* UserStatsTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB7D427935EA3003A6010 /* UserStatsTracker.xcdatamodeld */; };
+		C93E0B9127BDE1E80089CAD3 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E0B9027BDE1E80089CAD3 /* TimerModel.swift */; };
+		C941DE3227C57F60002081D3 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941DE3127C57F60002081D3 /* AppState.swift */; };
+		C941DE3427C59A08002081D3 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941DE3327C59A08002081D3 /* HomeModel.swift */; };
+		C941DE4127C5DA67002081D3 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941DE4027C5DA67002081D3 /* CustomColors.swift */; };
+		C941DE4227C5DA7F002081D3 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C941DE4027C5DA67002081D3 /* CustomColors.swift */; };
+		C94697D3279757A5009DA0C9 /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C94697D2279757A5009DA0C9 /* ding.mp3 */; };
+		C952D7A327A27B0800176F7F /* Creepy Kids.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C952D7A227A27B0800176F7F /* Creepy Kids.mp3 */; };
+		C952D7A427A27B0800176F7F /* Creepy Kids.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C952D7A227A27B0800176F7F /* Creepy Kids.mp3 */; };
+		C952D7A927A27EAC00176F7F /* The Forbidden Forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C952D7A627A27EAC00176F7F /* The Forbidden Forest.mp3 */; };
+		C952D7AA27A27EAC00176F7F /* The Forbidden Forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C952D7A627A27EAC00176F7F /* The Forbidden Forest.mp3 */; };
+		C952D7AC27A27EC500176F7F /* Conjuring The Dark Ones.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C952D7AB27A27EC500176F7F /* Conjuring The Dark Ones.mp3 */; };
+		C952D7AD27A27EC500176F7F /* Conjuring The Dark Ones.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C952D7AB27A27EC500176F7F /* Conjuring The Dark Ones.mp3 */; };
+		C952D7AF27A329CC00176F7F /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952D7AE27A329CC00176F7F /* Sounds.swift */; };
+		C952D7B027A329CC00176F7F /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952D7AE27A329CC00176F7F /* Sounds.swift */; };
+		C9578F35279C762B00FF30FA /* PostSessionStatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9578F34279C762B00FF30FA /* PostSessionStatController.swift */; };
+		C96F04752793715E0033CC78 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96F04742793715E0033CC78 /* CloudKit.framework */; };
+		C974C9D2279686CB00EDC113 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB7FE27935FB0003A6010 /* CoreDataStack.swift */; };
+		C994CFD227BF1D7500EB3713 /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994CFD127BF1D7500EB3713 /* NavigationButton.swift */; };
+		C99CE23127CD799600FC8F5F /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99CE23027CD799600FC8F5F /* TimerModel.swift */; };
+		C99CE23527CDCEEB00FC8F5F /* Relaxing Beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C99CE23427CDCEEB00FC8F5F /* Relaxing Beach.mp3 */; };
+		C99CE23627CDCEEB00FC8F5F /* Relaxing Beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C99CE23427CDCEEB00FC8F5F /* Relaxing Beach.mp3 */; };
+		C99CE23927CDCEF900FC8F5F /* Light Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C99CE23727CDCEF900FC8F5F /* Light Rain.mp3 */; };
+		C99CE23A27CDCEF900FC8F5F /* Light Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C99CE23727CDCEF900FC8F5F /* Light Rain.mp3 */; };
+		C99CE23B27CDCEF900FC8F5F /* Spring Forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C99CE23827CDCEF900FC8F5F /* Spring Forest.mp3 */; };
+		C99CE23C27CDCEF900FC8F5F /* Spring Forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C99CE23827CDCEF900FC8F5F /* Spring Forest.mp3 */; };
+		C9A0F5EB2794BFFF0008892E /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F5EA2794BFFF0008892E /* TimerViewModel.swift */; };
+		C9A0F5F12794C0300008892E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F5F02794C0300008892E /* TimerView.swift */; };
+		C9A0F5F32794C2F20008892E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0F5F22794C2F20008892E /* HomeView.swift */; };
+		C9B97C8127C7279C00E8B2A0 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B97C8027C7279C00E8B2A0 /* AppState.swift */; };
+		C9BEB7CC27935E9E003A6010 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB7CB27935E9E003A6010 /* ContentView.swift */; };
+		C9BEB7CE27935EA3003A6010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BEB7CD27935EA3003A6010 /* Assets.xcassets */; };
+		C9BEB7D127935EA3003A6010 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BEB7D027935EA3003A6010 /* Preview Assets.xcassets */; };
+		C9BEB7D627935EA3003A6010 /* UserStatsTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB7D427935EA3003A6010 /* UserStatsTracker.xcdatamodeld */; };
+		C9BEB7E027935EA4003A6010 /* quietMindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB7DF27935EA4003A6010 /* quietMindTests.swift */; };
+		C9BEB7EA27935EA4003A6010 /* quietMindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB7E927935EA4003A6010 /* quietMindUITests.swift */; };
+		C9BEB7EC27935EA4003A6010 /* quietMindUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB7EB27935EA4003A6010 /* quietMindUITestsLaunchTests.swift */; };
+		C9BEB7FA27935EF4003A6010 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB7F927935EF4003A6010 /* StatsView.swift */; };
+		C9BEB7FC27935F10003A6010 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB7FB27935F10003A6010 /* SceneDelegate.swift */; };
+		C9BEB7FF27935FB0003A6010 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB7FE27935FB0003A6010 /* CoreDataStack.swift */; };
+		C9BEB801279362C3003A6010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB800279362C3003A6010 /* AppDelegate.swift */; };
+		C9BEB80D279367A4003A6010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BEB80C279367A4003A6010 /* Assets.xcassets */; };
+		C9BEB813279367A6003A6010 /* quietMIND Watch App WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C9BEB812279367A6003A6010 /* quietMIND Watch App WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C9BEB818279367A6003A6010 /* quietMINDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB817279367A6003A6010 /* quietMINDApp.swift */; };
+		C9BEB81A279367A6003A6010 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB819279367A6003A6010 /* ContentView.swift */; };
+		C9BEB81E279367A6003A6010 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB81D279367A6003A6010 /* NotificationView.swift */; };
+		C9BEB820279367A6003A6010 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB81F279367A6003A6010 /* ComplicationController.swift */; };
+		C9BEB822279367A7003A6010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BEB821279367A7003A6010 /* Assets.xcassets */; };
+		C9BEB825279367A7003A6010 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BEB824279367A7003A6010 /* Preview Assets.xcassets */; };
+		C9BEB831279367A8003A6010 /* quietMIND_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB830279367A8003A6010 /* quietMIND_Watch_AppTests.swift */; };
+		C9BEB83B279367A8003A6010 /* quietMIND_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB83A279367A8003A6010 /* quietMIND_Watch_AppUITests.swift */; };
+		C9BEB83D279367A8003A6010 /* quietMIND_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB83C279367A8003A6010 /* quietMIND_Watch_AppUITestsLaunchTests.swift */; };
+		C9BEB840279367A8003A6010 /* tranquil.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C9BEB80A2793679A003A6010 /* tranquil.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C9BEB8502793688A003A6010 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEB84F2793688A003A6010 /* ExtensionDelegate.swift */; };
+		C9D6F6F0279B6B630014BDA0 /* UserStats+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D6F6EC279B6B630014BDA0 /* UserStats+CoreDataClass.swift */; };
+		C9D6F6F1279B6B630014BDA0 /* UserStats+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D6F6ED279B6B630014BDA0 /* UserStats+CoreDataProperties.swift */; };
+		C9D6F6F3279B6B760014BDA0 /* UserStats+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D6F6EC279B6B630014BDA0 /* UserStats+CoreDataClass.swift */; };
+		C9D6F6F5279B6B760014BDA0 /* UserStats+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D6F6ED279B6B630014BDA0 /* UserStats+CoreDataProperties.swift */; };
+		C9F0858027ACAB4A00BF3EAD /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F0857F27ACAB4A00BF3EAD /* Quotes.swift */; };
+		C9F0858127ACAB4A00BF3EAD /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F0857F27ACAB4A00BF3EAD /* Quotes.swift */; };
+		C9F0858227ACC77200BF3EAD /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C94697D2279757A5009DA0C9 /* ding.mp3 */; };
+		C9FA9799279661F700FD1E2E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FA9798279661F700FD1E2E /* CloudKit.framework */; };
+		C9FA979B279670C100FD1E2E /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA979A279670C100FD1E2E /* InitialView.swift */; };
+		C9FA97A227967A1300FD1E2E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA97A127967A1300FD1E2E /* TimerView.swift */; };
+		C9FA97A427967D8500FD1E2E /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA97A327967D8500FD1E2E /* TimerViewModel.swift */; };
+		C9FA97A6279683D800FD1E2E /* PostSessionStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA97A5279683D800FD1E2E /* PostSessionStatView.swift */; };
+		FACCC8B57095984FA17A3970 /* Pods_quietMind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0EA620333C0F38D7D5058E /* Pods_quietMind.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C95F24EC27A76E76008353A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9BEB7BE27935E9E003A6010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9BEB80927936799003A6010;
+			remoteInfo = "quietMIND Watch App";
+		};
+		C9BEB7DC27935EA4003A6010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9BEB7BE27935E9E003A6010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9BEB7C527935E9E003A6010;
+			remoteInfo = quietMind;
+		};
+		C9BEB7E627935EA4003A6010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9BEB7BE27935E9E003A6010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9BEB7C527935E9E003A6010;
+			remoteInfo = quietMind;
+		};
+		C9BEB814279367A6003A6010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9BEB7BE27935E9E003A6010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9BEB811279367A5003A6010;
+			remoteInfo = "quietMIND Watch App WatchKit Extension";
+		};
+		C9BEB82D279367A8003A6010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9BEB7BE27935E9E003A6010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9BEB811279367A5003A6010;
+			remoteInfo = "quietMIND Watch App WatchKit Extension";
+		};
+		C9BEB837279367A8003A6010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9BEB7BE27935E9E003A6010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9BEB80927936799003A6010;
+			remoteInfo = "quietMIND Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9BEB844279367A8003A6010 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C9BEB813279367A6003A6010 /* quietMIND Watch App WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB848279367A8003A6010 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C9BEB840279367A8003A6010 /* tranquil.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7E0EA620333C0F38D7D5058E /* Pods_quietMind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quietMind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9315A7427A5E4BE0066158A /* Milestones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestones.swift; sourceTree = "<group>"; };
+		C93E0B9027BDE1E80089CAD3 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		C941DE3127C57F60002081D3 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppState.swift; path = quietMIND/Models/AppState.swift; sourceTree = SOURCE_ROOT; };
+		C941DE3327C59A08002081D3 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeModel.swift; path = quietMIND/Models/HomeModel.swift; sourceTree = SOURCE_ROOT; };
+		C941DE4027C5DA67002081D3 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		C94697D2279757A5009DA0C9 /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
+		C952D7A227A27B0800176F7F /* Creepy Kids.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Creepy Kids.mp3"; sourceTree = "<group>"; };
+		C952D7A627A27EAC00176F7F /* The Forbidden Forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Forbidden Forest.mp3"; sourceTree = "<group>"; };
+		C952D7AB27A27EC500176F7F /* Conjuring The Dark Ones.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Conjuring The Dark Ones.mp3"; sourceTree = "<group>"; };
+		C952D7AE27A329CC00176F7F /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		C9578F34279C762B00FF30FA /* PostSessionStatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSessionStatController.swift; sourceTree = "<group>"; };
+		C96F047127936F790033CC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C96F0472279370CF0033CC78 /* quietMind.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = quietMind.entitlements; sourceTree = "<group>"; };
+		C96F04742793715E0033CC78 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		C994CFD127BF1D7500EB3713 /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationButton.swift; path = quietMIND/Views/NavigationButton.swift; sourceTree = SOURCE_ROOT; };
+		C99CE23027CD799600FC8F5F /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		C99CE23427CDCEEB00FC8F5F /* Relaxing Beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Relaxing Beach.mp3"; sourceTree = "<group>"; };
+		C99CE23727CDCEF900FC8F5F /* Light Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Light Rain.mp3"; sourceTree = "<group>"; };
+		C99CE23827CDCEF900FC8F5F /* Spring Forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Spring Forest.mp3"; sourceTree = "<group>"; };
+		C9A0F5EA2794BFFF0008892E /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimerViewModel.swift; path = "quietMIND/View Models/TimerViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		C9A0F5F02794C0300008892E /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimerView.swift; path = quietMIND/Views/TimerView.swift; sourceTree = SOURCE_ROOT; };
+		C9A0F5F22794C2F20008892E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = quietMIND/Views/HomeView.swift; sourceTree = SOURCE_ROOT; };
+		C9B97C8027C7279C00E8B2A0 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		C9BEB7C627935E9E003A6010 /* quietMIND.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quietMIND.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9BEB7CB27935E9E003A6010 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C9BEB7CD27935EA3003A6010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9BEB7D027935EA3003A6010 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9BEB7D527935EA3003A6010 /* quietMind.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = quietMind.xcdatamodel; sourceTree = "<group>"; };
+		C9BEB7DB27935EA4003A6010 /* quietMINDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quietMINDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9BEB7DF27935EA4003A6010 /* quietMindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quietMindTests.swift; sourceTree = "<group>"; };
+		C9BEB7E527935EA4003A6010 /* quietMINDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quietMINDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9BEB7E927935EA4003A6010 /* quietMindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quietMindUITests.swift; sourceTree = "<group>"; };
+		C9BEB7EB27935EA4003A6010 /* quietMindUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quietMindUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C9BEB7F927935EF4003A6010 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		C9BEB7FB27935F10003A6010 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C9BEB7FE27935FB0003A6010 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		C9BEB800279362C3003A6010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = quietMIND/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		C9BEB80A2793679A003A6010 /* tranquil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tranquil.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9BEB80C279367A4003A6010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9BEB812279367A6003A6010 /* quietMIND Watch App WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "quietMIND Watch App WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9BEB817279367A6003A6010 /* quietMINDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quietMINDApp.swift; sourceTree = "<group>"; };
+		C9BEB819279367A6003A6010 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C9BEB81D279367A6003A6010 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		C9BEB81F279367A6003A6010 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C9BEB821279367A7003A6010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9BEB824279367A7003A6010 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9BEB826279367A8003A6010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9BEB827279367A8003A6010 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C9BEB82C279367A8003A6010 /* quietMIND Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quietMIND Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9BEB830279367A8003A6010 /* quietMIND_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quietMIND_Watch_AppTests.swift; sourceTree = "<group>"; };
+		C9BEB836279367A8003A6010 /* quietMIND Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quietMIND Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9BEB83A279367A8003A6010 /* quietMIND_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quietMIND_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		C9BEB83C279367A8003A6010 /* quietMIND_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quietMIND_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C9BEB84F2793688A003A6010 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C9D6F6EC279B6B630014BDA0 /* UserStats+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserStats+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C9D6F6ED279B6B630014BDA0 /* UserStats+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserStats+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C9F0857F27ACAB4A00BF3EAD /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		C9FA9797279661F000FD1E2E /* quietMIND Watch App WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "quietMIND Watch App WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		C9FA9798279661F700FD1E2E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		C9FA979A279670C100FD1E2E /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		C9FA97A127967A1300FD1E2E /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		C9FA97A327967D8500FD1E2E /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		C9FA97A5279683D800FD1E2E /* PostSessionStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSessionStatView.swift; sourceTree = "<group>"; };
+		D5BA759DAFBD851B7130171D /* Pods-quietMind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quietMind.release.xcconfig"; path = "Target Support Files/Pods-quietMind/Pods-quietMind.release.xcconfig"; sourceTree = "<group>"; };
+		DE03B81EBD4F02A8641F05D7 /* Pods-quietMind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quietMind.debug.xcconfig"; path = "Target Support Files/Pods-quietMind/Pods-quietMind.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9BEB7C327935E9E003A6010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96F04752793715E0033CC78 /* CloudKit.framework in Frameworks */,
+				FACCC8B57095984FA17A3970 /* Pods_quietMind.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB7D827935EA4003A6010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB7E227935EA4003A6010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB80F279367A5003A6010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FA9799279661F700FD1E2E /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB829279367A8003A6010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB833279367A8003A6010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA276A275FB631D1DC46A28C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE03B81EBD4F02A8641F05D7 /* Pods-quietMind.debug.xcconfig */,
+				D5BA759DAFBD851B7130171D /* Pods-quietMind.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C94697D127975781009DA0C9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C99CE23727CDCEF900FC8F5F /* Light Rain.mp3 */,
+				C99CE23827CDCEF900FC8F5F /* Spring Forest.mp3 */,
+				C99CE23427CDCEEB00FC8F5F /* Relaxing Beach.mp3 */,
+				C94697D2279757A5009DA0C9 /* ding.mp3 */,
+				C952D7A227A27B0800176F7F /* Creepy Kids.mp3 */,
+				C952D7A627A27EAC00176F7F /* The Forbidden Forest.mp3 */,
+				C952D7AB27A27EC500176F7F /* Conjuring The Dark Ones.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		C9578F36279C93F700FF30FA /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				C941DE4027C5DA67002081D3 /* CustomColors.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		C96F04732793715E0033CC78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9FA9798279661F700FD1E2E /* CloudKit.framework */,
+				C96F04742793715E0033CC78 /* CloudKit.framework */,
+				7E0EA620333C0F38D7D5058E /* Pods_quietMind.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9A0F5E32794BC420008892E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C9A0F5E42794BC520008892E /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9A0F5EA2794BFFF0008892E /* TimerViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		C9B97C7F27C7278D00E8B2A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9B97C8027C7279C00E8B2A0 /* AppState.swift */,
+				C99CE23027CD799600FC8F5F /* TimerModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C9BEB7BD27935E9E003A6010 = {
+			isa = PBXGroup;
+			children = (
+				C9BEB8512793696E003A6010 /* Shared */,
+				C9BEB7C827935E9E003A6010 /* quietMind */,
+				C9BEB7DE27935EA4003A6010 /* quietMindTests */,
+				C9BEB7E827935EA4003A6010 /* quietMindUITests */,
+				C9BEB80B2793679A003A6010 /* quietMIND Watch App */,
+				C9BEB816279367A6003A6010 /* quietMIND Watch App WatchKit Extension */,
+				C9BEB82F279367A8003A6010 /* quietMIND Watch AppTests */,
+				C9BEB839279367A8003A6010 /* quietMIND Watch AppUITests */,
+				C9BEB7C727935E9E003A6010 /* Products */,
+				C96F04732793715E0033CC78 /* Frameworks */,
+				BA276A275FB631D1DC46A28C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C9BEB7C727935E9E003A6010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9BEB7C627935E9E003A6010 /* quietMIND.app */,
+				C9BEB7DB27935EA4003A6010 /* quietMINDTests.xctest */,
+				C9BEB7E527935EA4003A6010 /* quietMINDUITests.xctest */,
+				C9BEB80A2793679A003A6010 /* tranquil.app */,
+				C9BEB812279367A6003A6010 /* quietMIND Watch App WatchKit Extension.appex */,
+				C9BEB82C279367A8003A6010 /* quietMIND Watch AppTests.xctest */,
+				C9BEB836279367A8003A6010 /* quietMIND Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9BEB7C827935E9E003A6010 /* quietMind */ = {
+			isa = PBXGroup;
+			children = (
+				C9BEB800279362C3003A6010 /* AppDelegate.swift */,
+				C9BEB7FB27935F10003A6010 /* SceneDelegate.swift */,
+				C9A0F5E32794BC420008892E /* Controllers */,
+				C9BEB7FD27935FA2003A6010 /* Models */,
+				C9A0F5E42794BC520008892E /* View Models */,
+				C9BEB7F827935EE1003A6010 /* Views */,
+				C96F0472279370CF0033CC78 /* quietMind.entitlements */,
+				C96F047127936F790033CC78 /* Info.plist */,
+				C9BEB7CD27935EA3003A6010 /* Assets.xcassets */,
+				C9BEB7CF27935EA3003A6010 /* Preview Content */,
+			);
+			path = quietMind;
+			sourceTree = "<group>";
+		};
+		C9BEB7CF27935EA3003A6010 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C9BEB7D027935EA3003A6010 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9BEB7DE27935EA4003A6010 /* quietMindTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9BEB7DF27935EA4003A6010 /* quietMindTests.swift */,
+			);
+			path = quietMindTests;
+			sourceTree = "<group>";
+		};
+		C9BEB7E827935EA4003A6010 /* quietMindUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C9BEB7E927935EA4003A6010 /* quietMindUITests.swift */,
+				C9BEB7EB27935EA4003A6010 /* quietMindUITestsLaunchTests.swift */,
+			);
+			path = quietMindUITests;
+			sourceTree = "<group>";
+		};
+		C9BEB7F827935EE1003A6010 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9BEB7CB27935E9E003A6010 /* ContentView.swift */,
+				C9BEB7F927935EF4003A6010 /* StatsView.swift */,
+				C9A0F5F02794C0300008892E /* TimerView.swift */,
+				C9A0F5F22794C2F20008892E /* HomeView.swift */,
+				C994CFD127BF1D7500EB3713 /* NavigationButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9BEB7FD27935FA2003A6010 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C93E0B9027BDE1E80089CAD3 /* TimerModel.swift */,
+				C941DE3127C57F60002081D3 /* AppState.swift */,
+				C941DE3327C59A08002081D3 /* HomeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C9BEB80B2793679A003A6010 /* quietMIND Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				C9BEB80C279367A4003A6010 /* Assets.xcassets */,
+			);
+			path = "quietMIND Watch App";
+			sourceTree = "<group>";
+		};
+		C9BEB816279367A6003A6010 /* quietMIND Watch App WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C9B97C7F27C7278D00E8B2A0 /* Models */,
+				C9D6F6F6279B96140014BDA0 /* Controllers */,
+				C9FA979D279676FE00FD1E2E /* View Models */,
+				C9FA979C279676E900FD1E2E /* Views */,
+				C9FA9797279661F000FD1E2E /* quietMIND Watch App WatchKit Extension.entitlements */,
+				C9BEB817279367A6003A6010 /* quietMINDApp.swift */,
+				C9BEB84F2793688A003A6010 /* ExtensionDelegate.swift */,
+				C9BEB81F279367A6003A6010 /* ComplicationController.swift */,
+				C9BEB821279367A7003A6010 /* Assets.xcassets */,
+				C9BEB826279367A8003A6010 /* Info.plist */,
+				C9BEB827279367A8003A6010 /* PushNotificationPayload.apns */,
+				C9BEB823279367A7003A6010 /* Preview Content */,
+			);
+			path = "quietMIND Watch App WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C9BEB823279367A7003A6010 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C9BEB824279367A7003A6010 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9BEB82F279367A8003A6010 /* quietMIND Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9BEB830279367A8003A6010 /* quietMIND_Watch_AppTests.swift */,
+			);
+			path = "quietMIND Watch AppTests";
+			sourceTree = "<group>";
+		};
+		C9BEB839279367A8003A6010 /* quietMIND Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C9BEB83A279367A8003A6010 /* quietMIND_Watch_AppUITests.swift */,
+				C9BEB83C279367A8003A6010 /* quietMIND_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "quietMIND Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		C9BEB8512793696E003A6010 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C9D6F6EC279B6B630014BDA0 /* UserStats+CoreDataClass.swift */,
+				C9D6F6ED279B6B630014BDA0 /* UserStats+CoreDataProperties.swift */,
+				C9BEB85227936A8D003A6010 /* Models */,
+				C94697D127975781009DA0C9 /* Sounds */,
+				C9578F36279C93F700FF30FA /* View Models */,
+				C9BEB7D427935EA3003A6010 /* UserStatsTracker.xcdatamodeld */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C9BEB85227936A8D003A6010 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9BEB7FE27935FB0003A6010 /* CoreDataStack.swift */,
+				C952D7AE27A329CC00176F7F /* Sounds.swift */,
+				C9315A7427A5E4BE0066158A /* Milestones.swift */,
+				C9F0857F27ACAB4A00BF3EAD /* Quotes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C9D6F6F6279B96140014BDA0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9578F34279C762B00FF30FA /* PostSessionStatController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C9FA979C279676E900FD1E2E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9BEB819279367A6003A6010 /* ContentView.swift */,
+				C9BEB81D279367A6003A6010 /* NotificationView.swift */,
+				C9FA979A279670C100FD1E2E /* InitialView.swift */,
+				C9FA97A127967A1300FD1E2E /* TimerView.swift */,
+				C9FA97A5279683D800FD1E2E /* PostSessionStatView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9FA979D279676FE00FD1E2E /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9FA97A327967D8500FD1E2E /* TimerViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9BEB7C527935E9E003A6010 /* quietMIND */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9BEB7EF27935EA4003A6010 /* Build configuration list for PBXNativeTarget "quietMIND" */;
+			buildPhases = (
+				8B083A3EE733BFC680761892 /* [CP] Check Pods Manifest.lock */,
+				C9BEB7C227935E9E003A6010 /* Sources */,
+				C9BEB7C327935E9E003A6010 /* Frameworks */,
+				C9BEB7C427935E9E003A6010 /* Resources */,
+				C9BEB848279367A8003A6010 /* Embed Watch Content */,
+				06024B891F0BA66065FE24F3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C95F24ED27A76E76008353A2 /* PBXTargetDependency */,
+			);
+			name = quietMIND;
+			productName = quietMind;
+			productReference = C9BEB7C627935E9E003A6010 /* quietMIND.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9BEB7DA27935EA4003A6010 /* quietMINDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9BEB7F227935EA4003A6010 /* Build configuration list for PBXNativeTarget "quietMINDTests" */;
+			buildPhases = (
+				C9BEB7D727935EA4003A6010 /* Sources */,
+				C9BEB7D827935EA4003A6010 /* Frameworks */,
+				C9BEB7D927935EA4003A6010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9BEB7DD27935EA4003A6010 /* PBXTargetDependency */,
+			);
+			name = quietMINDTests;
+			productName = quietMindTests;
+			productReference = C9BEB7DB27935EA4003A6010 /* quietMINDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9BEB7E427935EA4003A6010 /* quietMINDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9BEB7F527935EA4003A6010 /* Build configuration list for PBXNativeTarget "quietMINDUITests" */;
+			buildPhases = (
+				C9BEB7E127935EA4003A6010 /* Sources */,
+				C9BEB7E227935EA4003A6010 /* Frameworks */,
+				C9BEB7E327935EA4003A6010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9BEB7E727935EA4003A6010 /* PBXTargetDependency */,
+			);
+			name = quietMINDUITests;
+			productName = quietMindUITests;
+			productReference = C9BEB7E527935EA4003A6010 /* quietMINDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C9BEB80927936799003A6010 /* quietMIND Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9BEB845279367A8003A6010 /* Build configuration list for PBXNativeTarget "quietMIND Watch App" */;
+			buildPhases = (
+				C9BEB80827936799003A6010 /* Resources */,
+				C9BEB844279367A8003A6010 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9BEB815279367A6003A6010 /* PBXTargetDependency */,
+			);
+			name = "quietMIND Watch App";
+			productName = "quietMIND Watch App";
+			productReference = C9BEB80A2793679A003A6010 /* tranquil.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C9BEB811279367A5003A6010 /* quietMIND Watch App WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9BEB841279367A8003A6010 /* Build configuration list for PBXNativeTarget "quietMIND Watch App WatchKit Extension" */;
+			buildPhases = (
+				C9BEB80E279367A5003A6010 /* Sources */,
+				C9BEB80F279367A5003A6010 /* Frameworks */,
+				C9BEB810279367A5003A6010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "quietMIND Watch App WatchKit Extension";
+			productName = "quietMIND Watch App WatchKit Extension";
+			productReference = C9BEB812279367A6003A6010 /* quietMIND Watch App WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		C9BEB82B279367A8003A6010 /* quietMIND Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9BEB849279367A8003A6010 /* Build configuration list for PBXNativeTarget "quietMIND Watch AppTests" */;
+			buildPhases = (
+				C9BEB828279367A8003A6010 /* Sources */,
+				C9BEB829279367A8003A6010 /* Frameworks */,
+				C9BEB82A279367A8003A6010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9BEB82E279367A8003A6010 /* PBXTargetDependency */,
+			);
+			name = "quietMIND Watch AppTests";
+			productName = "quietMIND Watch AppTests";
+			productReference = C9BEB82C279367A8003A6010 /* quietMIND Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9BEB835279367A8003A6010 /* quietMIND Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9BEB84C279367A8003A6010 /* Build configuration list for PBXNativeTarget "quietMIND Watch AppUITests" */;
+			buildPhases = (
+				C9BEB832279367A8003A6010 /* Sources */,
+				C9BEB833279367A8003A6010 /* Frameworks */,
+				C9BEB834279367A8003A6010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9BEB838279367A8003A6010 /* PBXTargetDependency */,
+			);
+			name = "quietMIND Watch AppUITests";
+			productName = "quietMIND Watch AppUITests";
+			productReference = C9BEB836279367A8003A6010 /* quietMIND Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9BEB7BE27935E9E003A6010 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					C9BEB7C527935E9E003A6010 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					C9BEB7DA27935EA4003A6010 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = C9BEB7C527935E9E003A6010;
+					};
+					C9BEB7E427935EA4003A6010 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = C9BEB7C527935E9E003A6010;
+					};
+					C9BEB80927936799003A6010 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					C9BEB811279367A5003A6010 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					C9BEB82B279367A8003A6010 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = C9BEB811279367A5003A6010;
+					};
+					C9BEB835279367A8003A6010 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = C9BEB80927936799003A6010;
+					};
+				};
+			};
+			buildConfigurationList = C9BEB7C127935E9E003A6010 /* Build configuration list for PBXProject "quietMIND" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9BEB7BD27935E9E003A6010;
+			productRefGroup = C9BEB7C727935E9E003A6010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9BEB7C527935E9E003A6010 /* quietMIND */,
+				C9BEB7DA27935EA4003A6010 /* quietMINDTests */,
+				C9BEB7E427935EA4003A6010 /* quietMINDUITests */,
+				C9BEB80927936799003A6010 /* quietMIND Watch App */,
+				C9BEB811279367A5003A6010 /* quietMIND Watch App WatchKit Extension */,
+				C9BEB82B279367A8003A6010 /* quietMIND Watch AppTests */,
+				C9BEB835279367A8003A6010 /* quietMIND Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9BEB7C427935E9E003A6010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99CE23927CDCEF900FC8F5F /* Light Rain.mp3 in Resources */,
+				C9BEB7D127935EA3003A6010 /* Preview Assets.xcassets in Resources */,
+				C99CE23527CDCEEB00FC8F5F /* Relaxing Beach.mp3 in Resources */,
+				C952D7A327A27B0800176F7F /* Creepy Kids.mp3 in Resources */,
+				C9F0858227ACC77200BF3EAD /* ding.mp3 in Resources */,
+				C952D7A927A27EAC00176F7F /* The Forbidden Forest.mp3 in Resources */,
+				C99CE23B27CDCEF900FC8F5F /* Spring Forest.mp3 in Resources */,
+				C9BEB7CE27935EA3003A6010 /* Assets.xcassets in Resources */,
+				C952D7AC27A27EC500176F7F /* Conjuring The Dark Ones.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB7D927935EA4003A6010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB7E327935EA4003A6010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB80827936799003A6010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9BEB80D279367A4003A6010 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB810279367A5003A6010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99CE23A27CDCEF900FC8F5F /* Light Rain.mp3 in Resources */,
+				C952D7AD27A27EC500176F7F /* Conjuring The Dark Ones.mp3 in Resources */,
+				C99CE23627CDCEEB00FC8F5F /* Relaxing Beach.mp3 in Resources */,
+				C952D7AA27A27EAC00176F7F /* The Forbidden Forest.mp3 in Resources */,
+				C952D7A427A27B0800176F7F /* Creepy Kids.mp3 in Resources */,
+				C9BEB825279367A7003A6010 /* Preview Assets.xcassets in Resources */,
+				C99CE23C27CDCEF900FC8F5F /* Spring Forest.mp3 in Resources */,
+				C9BEB822279367A7003A6010 /* Assets.xcassets in Resources */,
+				C94697D3279757A5009DA0C9 /* ding.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB82A279367A8003A6010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB834279367A8003A6010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06024B891F0BA66065FE24F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quietMind/Pods-quietMind-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-quietMind/Pods-quietMind-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-quietMind/Pods-quietMind-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B083A3EE733BFC680761892 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-quietMind-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9BEB7C227935E9E003A6010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A0F5F12794C0300008892E /* TimerView.swift in Sources */,
+				C9A0F5EB2794BFFF0008892E /* TimerViewModel.swift in Sources */,
+				C941DE3227C57F60002081D3 /* AppState.swift in Sources */,
+				C9A0F5F32794C2F20008892E /* HomeView.swift in Sources */,
+				C9315A7527A5E4BE0066158A /* Milestones.swift in Sources */,
+				C9BEB801279362C3003A6010 /* AppDelegate.swift in Sources */,
+				C9D6F6F1279B6B630014BDA0 /* UserStats+CoreDataProperties.swift in Sources */,
+				C994CFD227BF1D7500EB3713 /* NavigationButton.swift in Sources */,
+				C9BEB7FF27935FB0003A6010 /* CoreDataStack.swift in Sources */,
+				C9BEB7FA27935EF4003A6010 /* StatsView.swift in Sources */,
+				C9BEB7CC27935E9E003A6010 /* ContentView.swift in Sources */,
+				C941DE4227C5DA7F002081D3 /* CustomColors.swift in Sources */,
+				C952D7AF27A329CC00176F7F /* Sounds.swift in Sources */,
+				C93E0B9127BDE1E80089CAD3 /* TimerModel.swift in Sources */,
+				C9BEB7D627935EA3003A6010 /* UserStatsTracker.xcdatamodeld in Sources */,
+				C9F0858027ACAB4A00BF3EAD /* Quotes.swift in Sources */,
+				C9BEB7FC27935F10003A6010 /* SceneDelegate.swift in Sources */,
+				C941DE3427C59A08002081D3 /* HomeModel.swift in Sources */,
+				C9D6F6F0279B6B630014BDA0 /* UserStats+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB7D727935EA4003A6010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9BEB7E027935EA4003A6010 /* quietMindTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB7E127935EA4003A6010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9BEB7EA27935EA4003A6010 /* quietMindUITests.swift in Sources */,
+				C9BEB7EC27935EA4003A6010 /* quietMindUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB80E279367A5003A6010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FA97A227967A1300FD1E2E /* TimerView.swift in Sources */,
+				C9BEB81A279367A6003A6010 /* ContentView.swift in Sources */,
+				C9B97C8127C7279C00E8B2A0 /* AppState.swift in Sources */,
+				C952D7B027A329CC00176F7F /* Sounds.swift in Sources */,
+				C9D6F6F5279B6B760014BDA0 /* UserStats+CoreDataProperties.swift in Sources */,
+				C9F0858127ACAB4A00BF3EAD /* Quotes.swift in Sources */,
+				C9578F35279C762B00FF30FA /* PostSessionStatController.swift in Sources */,
+				C9BEB8502793688A003A6010 /* ExtensionDelegate.swift in Sources */,
+				C935D4DB279E33CF00B46454 /* UserStatsTracker.xcdatamodeld in Sources */,
+				C9FA97A6279683D800FD1E2E /* PostSessionStatView.swift in Sources */,
+				C974C9D2279686CB00EDC113 /* CoreDataStack.swift in Sources */,
+				C941DE4127C5DA67002081D3 /* CustomColors.swift in Sources */,
+				C9FA979B279670C100FD1E2E /* InitialView.swift in Sources */,
+				C9D6F6F3279B6B760014BDA0 /* UserStats+CoreDataClass.swift in Sources */,
+				C9BEB820279367A6003A6010 /* ComplicationController.swift in Sources */,
+				C9BEB818279367A6003A6010 /* quietMINDApp.swift in Sources */,
+				C9BEB81E279367A6003A6010 /* NotificationView.swift in Sources */,
+				C9FA97A427967D8500FD1E2E /* TimerViewModel.swift in Sources */,
+				C9315A7627A5E4BE0066158A /* Milestones.swift in Sources */,
+				C99CE23127CD799600FC8F5F /* TimerModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB828279367A8003A6010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9BEB831279367A8003A6010 /* quietMIND_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BEB832279367A8003A6010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9BEB83B279367A8003A6010 /* quietMIND_Watch_AppUITests.swift in Sources */,
+				C9BEB83D279367A8003A6010 /* quietMIND_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C95F24ED27A76E76008353A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9BEB80927936799003A6010 /* quietMIND Watch App */;
+			targetProxy = C95F24EC27A76E76008353A2 /* PBXContainerItemProxy */;
+		};
+		C9BEB7DD27935EA4003A6010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9BEB7C527935E9E003A6010 /* quietMIND */;
+			targetProxy = C9BEB7DC27935EA4003A6010 /* PBXContainerItemProxy */;
+		};
+		C9BEB7E727935EA4003A6010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9BEB7C527935E9E003A6010 /* quietMIND */;
+			targetProxy = C9BEB7E627935EA4003A6010 /* PBXContainerItemProxy */;
+		};
+		C9BEB815279367A6003A6010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9BEB811279367A5003A6010 /* quietMIND Watch App WatchKit Extension */;
+			targetProxy = C9BEB814279367A6003A6010 /* PBXContainerItemProxy */;
+		};
+		C9BEB82E279367A8003A6010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9BEB811279367A5003A6010 /* quietMIND Watch App WatchKit Extension */;
+			targetProxy = C9BEB82D279367A8003A6010 /* PBXContainerItemProxy */;
+		};
+		C9BEB838279367A8003A6010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9BEB80927936799003A6010 /* quietMIND Watch App */;
+			targetProxy = C9BEB837279367A8003A6010 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C9BEB7ED27935EA4003A6010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9BEB7EE27935EA4003A6010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9BEB7F027935EA4003A6010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE03B81EBD4F02A8641F05D7 /* Pods-quietMind.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = quietMind/quietMind.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"quietMind/Preview Content\"";
+				DEVELOPMENT_TEAM = AU7K3CDN2H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = quietMind/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = tranquil;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.A15.quietMIND;
+				PRODUCT_NAME = quietMIND;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C9BEB7F127935EA4003A6010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5BA759DAFBD851B7130171D /* Pods-quietMind.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = quietMind/quietMind.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"quietMind/Preview Content\"";
+				DEVELOPMENT_TEAM = AU7K3CDN2H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = quietMind/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = tranquil;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.A15.quietMIND;
+				PRODUCT_NAME = quietMIND;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C9BEB7F327935EA4003A6010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU7K3CDN2H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = A15.quietMindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quietMind.app/quietMind";
+			};
+			name = Debug;
+		};
+		C9BEB7F427935EA4003A6010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU7K3CDN2H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = A15.quietMindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quietMind.app/quietMind";
+			};
+			name = Release;
+		};
+		C9BEB7F627935EA4003A6010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU7K3CDN2H;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = A15.quietMindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = quietMind;
+			};
+			name = Debug;
+		};
+		C9BEB7F727935EA4003A6010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU7K3CDN2H;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = A15.quietMindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = quietMind;
+			};
+			name = Release;
+		};
+		C9BEB842279367A8003A6010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "quietMIND Watch App WatchKit Extension/quietMIND Watch App WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"quietMIND Watch App WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = AU7K3CDN2H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "quietMIND Watch App WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "quietMIND Watch App WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = quietMIND_Watch_App_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.A15.quietMIND.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		C9BEB843279367A8003A6010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "quietMIND Watch App WatchKit Extension/quietMIND Watch App WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"quietMIND Watch App WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = AU7K3CDN2H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "quietMIND Watch App WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "quietMIND Watch App WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = quietMIND_Watch_App_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.A15.quietMIND.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		C9BEB846279367A8003A6010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU7K3CDN2H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = quietMIND_Watch_App_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.A15.quietMIND;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.A15.quietMIND.watchkitapp;
+				PRODUCT_NAME = tranquil;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		C9BEB847279367A8003A6010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU7K3CDN2H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = quietMIND_Watch_App_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.A15.quietMIND;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.A15.quietMIND.watchkitapp;
+				PRODUCT_NAME = tranquil;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		C9BEB84A279367A8003A6010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU7K3CDN2H;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "A15.quietMIND.quietMIND-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quietMIND Watch App WatchKit Extension.appex/quietMIND Watch App WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		C9BEB84B279367A8003A6010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU7K3CDN2H;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "A15.quietMIND.quietMIND-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quietMIND Watch App WatchKit Extension.appex/quietMIND Watch App WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		C9BEB84D279367A8003A6010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU7K3CDN2H;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "A15.quietMIND.quietMIND-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "quietMIND Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		C9BEB84E279367A8003A6010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU7K3CDN2H;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "A15.quietMIND.quietMIND-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "quietMIND Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9BEB7C127935E9E003A6010 /* Build configuration list for PBXProject "quietMIND" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9BEB7ED27935EA4003A6010 /* Debug */,
+				C9BEB7EE27935EA4003A6010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9BEB7EF27935EA4003A6010 /* Build configuration list for PBXNativeTarget "quietMIND" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9BEB7F027935EA4003A6010 /* Debug */,
+				C9BEB7F127935EA4003A6010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9BEB7F227935EA4003A6010 /* Build configuration list for PBXNativeTarget "quietMINDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9BEB7F327935EA4003A6010 /* Debug */,
+				C9BEB7F427935EA4003A6010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9BEB7F527935EA4003A6010 /* Build configuration list for PBXNativeTarget "quietMINDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9BEB7F627935EA4003A6010 /* Debug */,
+				C9BEB7F727935EA4003A6010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9BEB841279367A8003A6010 /* Build configuration list for PBXNativeTarget "quietMIND Watch App WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9BEB842279367A8003A6010 /* Debug */,
+				C9BEB843279367A8003A6010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9BEB845279367A8003A6010 /* Build configuration list for PBXNativeTarget "quietMIND Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9BEB846279367A8003A6010 /* Debug */,
+				C9BEB847279367A8003A6010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9BEB849279367A8003A6010 /* Build configuration list for PBXNativeTarget "quietMIND Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9BEB84A279367A8003A6010 /* Debug */,
+				C9BEB84B279367A8003A6010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9BEB84C279367A8003A6010 /* Build configuration list for PBXNativeTarget "quietMIND Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9BEB84D279367A8003A6010 /* Debug */,
+				C9BEB84E279367A8003A6010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C9BEB7D427935EA3003A6010 /* UserStatsTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C9BEB7D527935EA3003A6010 /* quietMind.xcdatamodel */,
+			);
+			currentVersion = C9BEB7D527935EA3003A6010 /* quietMind.xcdatamodel */;
+			path = UserStatsTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C9BEB7BE27935E9E003A6010 /* Project object */;
+}

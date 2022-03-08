@@ -1,0 +1,6 @@
+framework module Pods_quietMind {
+  umbrella header "Pods-quietMind-umbrella.h"
+
+  export *
+  module * { export * }
+}

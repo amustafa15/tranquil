@@ -1,0 +1,6 @@
+framework module NavigationStack {
+  umbrella header "NavStack-umbrella.h"
+
+  export *
+  module * { export * }
+}
