@@ -19,6 +19,7 @@ struct TimerView: View {
 
     @StateObject var vm = CoreDataStackRelationshipViewModel()
     @ObservedObject var timerViewModel: TimerViewModel
+    @State private var isSerialKiller = UserDefaults.standard.bool(forKey: "isSerialKiller")
     
     @EnvironmentObject var appState: AppState
     
@@ -28,7 +29,7 @@ struct TimerView: View {
         VStack {
             VStack {
                 RoundedRectangle(cornerRadius: 25)
-                    .fill(Color.ui.RectangleOverlay)
+                    .fill(Color.RectangleOverlay)
                     .frame(width: 350, height: 325)
                     .opacity(0.75)
                     .padding()
@@ -37,7 +38,8 @@ struct TimerView: View {
                             if timerViewModel.timerModel.timerVal > 0 {
                                 Text(timerViewModel.timeString(time: timerViewModel.getTimerVal()))
                                     .font(.system(size: 90))
-                                    .foregroundColor(Color.ui.DodgerBlue)
+//                                    .foregroundColor(UserDefaults.standard.bool(forKey: "isSerialKiller") == true ? Color.ui.ImperialRed : Color.ui.DodgerBlue)
+                                    .foregroundColor(Color.ColorPrimary)
                                     .onReceive(timer) { _ in
                                         timerViewModel.startTimer()
                                     }
@@ -50,7 +52,7 @@ struct TimerView: View {
                                 
                                 HStack {
                                     self.timerViewModel.getPaused() == true ? Image(systemName: "play.circle")
-                                        .foregroundColor(Color.ui.DodgerBlue)
+                                        .foregroundColor(Color.DodgerBlue)
                                         .font(.system(size: 75))
                                         .onTapGesture {
                                             self.timerViewModel.pressPause()
@@ -59,7 +61,7 @@ struct TimerView: View {
                                             }
                                         }
                                     : Image(systemName: "pause.circle")
-                                        .foregroundColor(Color.ui.DodgerBlue)
+                                        .foregroundColor(Color.DodgerBlue)
                                         .font(.system(size: 75))
                                         .onTapGesture {
                                             self.timerViewModel.pressPause()
@@ -71,7 +73,7 @@ struct TimerView: View {
                                     // cancel button
                                     Image(systemName: "xmark.circle")
                                         .font(.system(size: 75))
-                                        .foregroundColor(Color.ui.ImperialRed)
+                                        .foregroundColor(Color.ImperialRed)
                                         .onTapGesture {
                                             appState.rootViewId = UUID()
                                             if self.timerViewModel.getChosenSound() != "None" {
@@ -80,7 +82,7 @@ struct TimerView: View {
                                         }
                                 }
                             } else {
-                                Text("\(quotes.getQuote()[0])")
+                                Text("\(quotes.getQuote(self.isSerialKiller)[0])")
                                     .padding()
                                     .font(.system(size: 20))
                                     .padding(.bottom, -15)
@@ -89,7 +91,7 @@ struct TimerView: View {
                                         vm.addTodaysSession(Double(self.timerViewModel.getInitialTime()))
                                         timerViewModel.playSounds("ding")
                                     }
-                                Text("\(quotes.getQuote()[1])")
+                                Text("\(quotes.getQuote(self.isSerialKiller)[1])")
                                     .padding(.bottom, 5)
                                     .font(.system(size: 23))
                                     .frame(alignment: .trailing)

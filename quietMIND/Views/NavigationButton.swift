@@ -30,14 +30,14 @@ struct NavigationButton<Destination: View, Label: View>: View {
                     }
                 }
               )
-              .foregroundColor(Color.ui.DodgerBlue)
+              .foregroundColor(Color.ColorPrimary)
               .font(.title2)
               .padding()
 //              .frame(minWidth: 250)
               .frame(minWidth: 0, maxWidth: 200, minHeight: 0, maxHeight: 40, alignment: .center)
               .overlay(
                   Capsule(style: .continuous)
-                      .stroke(Color.ui.DodgerBlue, lineWidth: 3)
+                    .stroke(Color.ColorPrimary, lineWidth: 3)
               )
         }
         

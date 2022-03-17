@@ -13,6 +13,7 @@ class TimerViewModel: ObservableObject {
     
     @Published var timerModel: TimerModel = TimerModel()
     var audioPlayer: AVAudioPlayer!
+    @State private var isSerialKiller = UserDefaults.standard.bool(forKey: "isSerialKiller")
     
     init(){
         self.timerModel = timerModel
@@ -56,7 +57,11 @@ class TimerViewModel: ObservableObject {
     }
     
     func getSounds() -> [String]{
-        return self.timerModel.sounds
+        if isSerialKiller == true {
+            return self.timerModel.soundsDark
+        } else {
+            return self.timerModel.soundsLight
+        }
     }
     
     func getTimes() -> [Int] {

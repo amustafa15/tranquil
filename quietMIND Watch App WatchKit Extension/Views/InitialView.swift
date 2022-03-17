@@ -37,7 +37,7 @@ struct InitialView: View {
                         Text("30").tag(30)
                         Text("60").tag(60)
                     }
-                    .foregroundColor(Color.ui.DodgerBlue)
+                    .foregroundColor(Color.ColorPrimary)
                     .pickerStyle(.wheel)
                 
                     Picker(selection: self.$timerViewModel.timerModel.chosenSound, label: Text("Background sounds")) {
@@ -46,7 +46,7 @@ struct InitialView: View {
                         Text("Spring Forest").tag("Spring Forest")
                         Text("Relaxing Beach").tag("Relaxing Beach")
                     }
-                    .foregroundColor(Color.ui.DodgerBlue)
+                    .foregroundColor(Color.ColorPrimary)
                     .pickerStyle(.wheel)
                 }
                 
@@ -58,10 +58,10 @@ struct InitialView: View {
                         label: {Text("Go")})
                             .frame(width: 150, height: 20, alignment: .center)
                             .buttonStyle(PlainButtonStyle())
-                            .foregroundColor(Color.ui.DodgerBlue)
+                            .foregroundColor(Color.ColorPrimary)
                             .overlay(
                                 Capsule(style: .continuous)
-                                    .stroke(Color.ui.DodgerBlue, lineWidth: 1)
+                                    .stroke(Color.ColorPrimary, lineWidth: 1)
                                     .frame(width: 150, height: 40, alignment: .center)
                             )
                 }

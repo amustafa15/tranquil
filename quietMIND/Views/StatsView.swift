@@ -75,7 +75,7 @@ struct StatsView: View {
                         maxHeight: .infinity,
                         alignment: .top
                     )
-                    .background(Color.ui.RectangleOverlay.opacity(0.55))
+                    .background(Color.RectangleOverlay.opacity(0.55))
                     .padding()
                     .navigationBarBackButtonHidden(true)
                     .navigationBarItems(leading: Button(action : {
@@ -122,12 +122,12 @@ struct CurrentProgressBar: View {
                     Circle()
                         .stroke(lineWidth: 20.0)
                         .opacity(0.3)
-                        .foregroundColor(Color.ui.ImperialRed)
+                        .foregroundColor(Color.ImperialRed)
 
                     Circle()
                         .trim(from: 0.0, to: CGFloat(min(self.progress, 1.0)))
                         .stroke(style: StrokeStyle(lineWidth: 20.0, lineCap: .round, lineJoin: .round))
-                        .foregroundColor(Color.ui.DodgerBlue)
+                        .foregroundColor(Color.DodgerBlue)
                         .rotationEffect(Angle(degrees: 270.0))
                         .animation(.linear, value: 1)
 
@@ -168,12 +168,12 @@ struct MilestoneProgressBar: View {
                     Circle()
                         .stroke(lineWidth: 20.0)
                         .opacity(0.3)
-                        .foregroundColor(Color.ui.ImperialRed)
+                        .foregroundColor(Color.ImperialRed)
 
                     Circle()
                         .trim(from: 0.0, to: CGFloat(min(self.progress, 1.0)))
                         .stroke(style: StrokeStyle(lineWidth: 20.0, lineCap: .round, lineJoin: .round))
-                        .foregroundColor(Color.ui.DodgerBlue)
+                        .foregroundColor(Color.DodgerBlue)
                         .rotationEffect(Angle(degrees: 270.0))
                         .animation(.linear, value: 1)
 

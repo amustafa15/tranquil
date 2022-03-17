@@ -21,14 +21,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // this may not be necessary
 //    coreDataStack.viewContext.automaticallyMergesChangesFromParent = true
         
-        let contentView = ContentView()
-            .environmentObject(appState)
+//        let contentView = ContentView()
+//            .environmentObject(appState)
 //            .environmentObject(NavigationModel(silenceErrors: true))
 //            .environment(\.managedObjectContext, coreDataStack.viewContext)
 
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: contentView)
+//            window.rootViewController = UIHostingController(rootView: contentView)
+            window.rootViewController = UIHostingController(rootView: MotherView().environmentObject(ViewRouter()))
             self.window = window
             window.makeKeyAndVisible()
         }

@@ -8,6 +8,7 @@
 import SwiftUI
 import UIKit
 import NavigationStack
+import Foundation
 
 
 struct ContentView: View {
@@ -21,7 +22,7 @@ struct ContentView: View {
 
     @State private var tabSelection = 0
     @State private var tappedTwice:Bool = false
-    
+    @ObservedObject var themeVM: ThemeViewModel
     
     var handler: Binding<Int> { Binding (
         get: {self.tabSelection},
@@ -39,6 +40,7 @@ struct ContentView: View {
 
     init() {
         UITabBar.appearance().scrollEdgeAppearance = appearance
+        self.themeVM = ThemeViewModel()
     }
 
     var body: some View {
@@ -64,9 +66,15 @@ struct ContentView: View {
 
             StatsView()
                 .tabItem {
-                    Label("Profile", systemImage: "square.and.pencil")
+                    Label("Stats", systemImage: "heart.circle.fill")
                 }.tag(1)
                 .highPriorityGesture(DragGesture().onEnded({ self.handleSwipe(translation: $0.translation.width)}))
+            
+            ProfileView(themeVM: self.themeVM)
+                .tabItem {
+                    Label("Profile", systemImage: "person.fill")
+                }.tag(2)
+                .highPriorityGesture(DragGesture().onEnded({self.handleSwipe(translation: $0.translation.width)}))
         }
         .frame(
             minWidth: 90,
@@ -83,7 +91,8 @@ struct ContentView: View {
             maxHeight: .infinity,
             alignment: .center
         )
-        .accentColor(Color.ui.DodgerBlue)
+//        .accentColor(UserDefaults.standard.bool(forKey: "isSerialKiller") == true ? Color.ui.ImperialRed : Color.ui.DodgerBlue)
+        .accentColor(Color.ColorPrimary)
     }
 
     private func handleSwipe(translation: CGFloat) {

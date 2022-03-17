@@ -14,7 +14,7 @@ import Combine
 struct HomeView: View {
 
     @State var secondScreenShown = false
-
+//    @State private var isSerialKiller = UserDefaults.standard.bool(forKey: "isSerialKiller")
     @ObservedObject var timerViewModel: TimerViewModel
 
     init() {
@@ -27,7 +27,7 @@ struct HomeView: View {
             VStack {
                 VStack {
                     RoundedRectangle(cornerRadius: 25)
-                        .fill(Color.ui.RectangleOverlay)
+                        .fill(Color.RectangleOverlay)
                         .frame(width: 350, height:300)
                         .opacity(0.90)
                         .overlay(

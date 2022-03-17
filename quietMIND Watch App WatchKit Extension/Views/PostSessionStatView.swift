@@ -37,10 +37,10 @@ struct PostSessionStatView: View {
                     label: {Text("Home")}
                 )
                 .buttonStyle(PlainButtonStyle())
-                .foregroundColor(Color.ui.DodgerBlue)
+                .foregroundColor(Color.ColorPrimary)
                 .overlay(
                     Capsule(style: .continuous)
-                        .stroke(Color.ui.DodgerBlue, lineWidth: 1)
+                        .stroke(Color.ColorPrimary, lineWidth: 1)
                         .frame(width: 150, height: 30, alignment: .center)
                 )
                 .padding(.top, 10)

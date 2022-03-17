@@ -41,7 +41,7 @@ struct TimerView: View {
                     // paused
                     self.timerViewModel.getPaused() == true ?
                         Image(systemName: "play.circle")
-                            .foregroundColor(Color.ui.DodgerBlue)
+                            .foregroundColor(Color.DodgerBlue)
                             .font(.system(size: 45))
                             .onTapGesture {
                                 self.timerViewModel.pressPause()
@@ -51,7 +51,7 @@ struct TimerView: View {
                             }
                     :
                         Image(systemName: "pause.circle")
-                            .foregroundColor(Color.ui.DodgerBlue)
+                            .foregroundColor(Color.DodgerBlue)
                             .font(.system(size: 45))
                             .onTapGesture {
                                 self.timerViewModel.pressPause()
@@ -63,7 +63,7 @@ struct TimerView: View {
                     // cancel button
                     Image(systemName: "xmark.circle")
                         .font(.system(size: 45))
-                        .foregroundColor(Color.ui.ImperialRed)
+                        .foregroundColor(Color.ImperialRed)
                         .onTapGesture {
                             appState.rootViewId = UUID()
                             if self.timerViewModel.getChosenSound() != "None" {
@@ -86,10 +86,10 @@ struct TimerView: View {
                         label: {Text("Good Job!")})
                         .frame(minWidth: 0,maxWidth: 100, alignment: .bottom)
                         .buttonStyle(PlainButtonStyle())
-                        .foregroundColor(Color.ui.DodgerBlue)
+                        .foregroundColor(Color.ColorPrimary)
                         .overlay(
                             Capsule(style: .continuous)
-                                .stroke(Color.ui.DodgerBlue, lineWidth: 1)
+                                .stroke(Color.ColorPrimary, lineWidth: 1)
                                 .frame(width: 150, height: 30, alignment: .center)
                         )
                         .padding(.top, 10)

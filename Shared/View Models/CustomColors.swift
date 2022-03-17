@@ -9,12 +9,24 @@ import Foundation
 import SwiftUI
 
 extension Color {
-    static let ui = Color.UI()
-
-    struct UI {
-        let EgyptianBlue = Color("EgyptianBlue")
-        let ImperialRed = Color("ImperialRed")
-        let DodgerBlue = Color("DodgerBlue")
-        let RectangleOverlay = Color("RectangleOverlay")
+    
+    static var ColorPrimary: Color {
+        return Color("ColorPrimary")
+    }
+    
+    static var FontColor: Color {
+        return Color("FontColor")
+    }
+    
+    static var RectangleOverlay: Color {
+        return Color("RectangleOverlay")
+    }
+    
+    static var ImperialRed: Color {
+        return Color("ImperialRed")
+    }
+    
+    static var DodgerBlue: Color {
+        return Color("DodgerBlue")
     }
 }
