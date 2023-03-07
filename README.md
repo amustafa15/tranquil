@@ -1,3 +1,9 @@
+# KNOWN ISSUES
+on home page the picker views are partially hidden in the UI. when testing on a device this does not happen. not sure why.
+just added tests
+did lots of modularizing. there's a chance one of the new files may not have transferred. if that is the case please message me at codingwithameen@gmail.com
+
+
 # tranquil
 Apple Watch/iOS meditation app
 
