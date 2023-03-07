@@ -31,15 +31,15 @@ class QuotesController: ObservableObject {
             print("self.parsedJSON is not empty")
         }
         
-        var middle = self.parsedJSON.count / 2
+        let middle = self.parsedJSON.count / 2
         if isSerialKiller {
-            var index = Int.random(in: 0..<middle)
+            let index = Int.random(in: 0..<middle)
             let quote = self.parsedJSON[index].quote
             let author = self.parsedJSON[index].author
             returnedQuote.append(quote)
             returnedQuote.append(author)
         } else {
-            var index = Int.random(in: middle..<parsedJSON.count)
+            let index = Int.random(in: middle..<parsedJSON.count)
             let quote = self.parsedJSON[index].quote
             let author = self.parsedJSON[index].author
             returnedQuote.append(quote)
