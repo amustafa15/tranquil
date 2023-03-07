@@ -12,8 +12,8 @@ struct ProfileView: View {
     
     @AppStorage("isSerialKiller") private var isSerialKiller: Bool = false // @AppStorage syncs this value with UserDefaults automatically
     @Environment(\.colorScheme) private var colorScheme: ColorScheme
-//    @State private var isDarkModeOn = false
-    @ObservedObject var themeVM: ThemeViewModel
+    // instead of observedobject?
+    @StateObject var themeVM: ThemeViewModel
     @State private var showText = false
     
     
@@ -30,25 +30,22 @@ struct ProfileView: View {
                         alignment: .center
                     )
                     .font(.system(size: 18))
-//                    .multilineTextAlignment(.center)
-//                    .onChange(of: isSerialKiller) { (state) in
-//                        themeVM.changeDarkMode(state: state)
-//                    }
                     .onChange(of: isSerialKiller, perform: { value in
                         themeVM.changeDarkMode(state: isSerialKiller)
                         showText = true // Once the toggle is interacted with, set showText to true
                     })
                     .toggleStyle(SwitchToggleStyle(tint: Color.ImperialRed))
+                    .accessibilityIdentifier("serialKillerToggle")
                 
                 if showText {
                     Text( isSerialKiller ? "Thank you for being honest. Your FBI file has been updated!" : "Lying to the FBI is a criminal offense. Your FBI file has been updated!" )
                         .multilineTextAlignment(.center)
+                        .accessibilityIdentifier("showText")
                 }
                 
             } // vstack 1
             .frame(
                 width: 350,
-//                height: UIScreen.main.bounds.height - 250,
                 alignment: .center
             )
         } // vstack 0

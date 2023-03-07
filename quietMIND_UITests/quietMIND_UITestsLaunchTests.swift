@@ -1,13 +1,13 @@
 //
-//  quietMindUITestsLaunchTests.swift
-//  quietMindUITests
+//  quietMIND_UITestsLaunchTests.swift
+//  quietMIND_UITests
 //
-//  Created by Ameen Mustafa on 1/15/22.
+//  Created by Ameen Mustafa on 3/3/23.
 //
 
 import XCTest
 
-class quietMindUITestsLaunchTests: XCTestCase {
+final class quietMIND_UITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
