@@ -1,0 +1,62 @@
+[
+    {
+        "quote": "Try to touch the past. Try to deal with the past. It's not real. It's just a dream.",
+        "author": "Ted Bundy",
+        "evil": true,
+    },
+    {
+        "quote": "He who stops being better stops being good.",
+        "author": "Oliver Cromwell",
+        "evil": true,
+    },
+    {
+        "quote": "The real strong have no need to prove it to phonies.",
+        "author": "Charles Manson",
+        "evil": true,
+    },
+    {
+        "quote": "I believe in one thing only, the power of human will.",
+        "author": "Joseph Stalin",
+        "evil": true,
+    },
+    {
+        "quote": "Countless millions who have walked this earth before us have gone through this, so this is just an experience we all share",
+        "author": "Ted Bundy",
+        "evil": true,
+    },
+    {
+        "quote": "Impossible is a word found only in the dictionary of fools.",
+        "author": "Napoleon Bonaparte",
+        "evil": true,
+    },
+    {
+        "quote": "The more you praise and celebrate your life, the more there is in life to celebrate",
+        "author": "Oprah",
+        "evil": false
+    },
+    {
+        "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall",
+        "author": "Nelson Mandela",
+        "evil": false
+    },
+    {
+        "quote": "Stay away from negative people, they have a problem for every solution",
+        "author": "Albert Einstein",
+        "evil": false
+    },
+    {
+        "quote": "If you have the ability to love, love yourself first",
+        "author": "Charles Bukwoski",
+        "evil": false
+    },
+    {
+        "quote": "Believe you can and you're halfway there",
+        "author": "Teddy Roosevelt",
+        "evil": false
+    },
+    {
+        "quote": "You cannot swim for new horizons until you have the courage to lose sight of the shore",
+        "author": "William Faulkner",
+        "evil": false
+    }
+]

@@ -7,21 +7,17 @@
 
 import SwiftUI
 import UIKit
-import NavigationStack
 import Foundation
 
 
 struct ContentView: View {
 
     static let id = String(describing: Self.self)
-    
-    @State private var selectedTab = 0
-    let numTabs = 2
-    let minDragTranslationForSwipe: CGFloat = 50
     @State var secondScreenShown = true
 
     @State private var tabSelection = 0
     @State private var tappedTwice:Bool = false
+    // instead of stateobject?
     @ObservedObject var themeVM: ThemeViewModel
     
     var handler: Binding<Int> { Binding (
@@ -47,19 +43,16 @@ struct ContentView: View {
         TabView(selection:handler) {
             NavigationView {
                 HomeView()
-                    .highPriorityGesture(DragGesture().onEnded({ self.handleSwipe(translation: $0.translation.width)}))
             }
             .tabItem {
               Label("Home", systemImage: "house.fill")
             }
             .tag(0)
-//            .id(homeID)
             .id(appState.rootViewId)
             .navigationViewStyle(StackNavigationViewStyle())
 
             .onChange(of: tappedTwice, perform: { tappedTwice in
                 guard tappedTwice else { return }
-//                homeID = UUID()
                 appState.rootViewId = UUID()
                 self.tappedTwice = false
             })
@@ -68,13 +61,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("Stats", systemImage: "heart.circle.fill")
                 }.tag(1)
-                .highPriorityGesture(DragGesture().onEnded({ self.handleSwipe(translation: $0.translation.width)}))
             
             ProfileView(themeVM: self.themeVM)
                 .tabItem {
                     Label("Profile", systemImage: "person.fill")
                 }.tag(2)
-                .highPriorityGesture(DragGesture().onEnded({self.handleSwipe(translation: $0.translation.width)}))
         }
         .frame(
             minWidth: 90,
@@ -91,16 +82,7 @@ struct ContentView: View {
             maxHeight: .infinity,
             alignment: .center
         )
-//        .accentColor(UserDefaults.standard.bool(forKey: "isSerialKiller") == true ? Color.ui.ImperialRed : Color.ui.DodgerBlue)
         .accentColor(Color.ColorPrimary)
-    }
-
-    private func handleSwipe(translation: CGFloat) {
-        if translation > minDragTranslationForSwipe && selectedTab > 0 {
-            selectedTab -= 1
-        } else  if translation < -minDragTranslationForSwipe && selectedTab < numTabs-1 {
-            selectedTab += 1
-        }
     }
 }
 
