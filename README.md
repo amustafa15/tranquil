@@ -3,6 +3,9 @@ on home page the picker views are partially hidden in the UI. when testing on a 
 just added tests
 did lots of modularizing. there's a chance one of the new files may not have transferred. if that is the case please message me at codingwithameen@gmail.com
 
+in order to play the sounds you will have to download them from dropbox and move them into the Shared/Sounds folder.
+Have not gotten to any apple watch modularization or tests
+
 
 # tranquil
 Apple Watch/iOS meditation app
