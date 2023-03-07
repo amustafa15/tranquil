@@ -60,7 +60,7 @@ class CoreDataStackRelationshipViewModel: ObservableObject {
     
     func getDates() -> Int {
 
-        var calender = Calendar.current
+        let calender = Calendar.current
         
         var dates = [Date]()
         for datez in allTimeUserStats.map { $0.date } {
@@ -107,7 +107,7 @@ class CoreDataStackRelationshipViewModel: ObservableObject {
     }
     
     func getDatesLong() -> Int {
-        var calender = Calendar.current
+        let calender = Calendar.current
         
         var dates = [Date]()
         for datez in allTimeUserStats.map { $0.date } {

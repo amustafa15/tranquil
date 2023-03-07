@@ -87,7 +87,7 @@ final class quietMIND_UITests: XCTestCase {
         let soundPickerBtn = app.buttons["SoundsPicker"]
         soundPickerBtn.tap()
         
-        var button = app.buttons["Light Rain"]
+        let button = app.buttons["Light Rain"]
         button.waitForExistence(timeout: 3)
         button.tap()
         soundPickerBtn.tap()
@@ -114,7 +114,7 @@ final class quietMIND_UITests: XCTestCase {
         
         let postStatsHomeBtn = app.buttons["PostStatsHomeBtn"]
         postStatsHomeBtn.waitForExistence(timeout: 65.0)
-        var quoteText = app.staticTexts["quoteText"]
+        let quoteText = app.staticTexts["quoteText"]
         var author = ""
         
         for i in 0..<authors.count {
@@ -145,7 +145,7 @@ final class quietMIND_UITests: XCTestCase {
         let postStatsHomeBtn = app.buttons["PostStatsHomeBtn"]
         postStatsHomeBtn.waitForExistence(timeout: 65.0)
         
-        var quoteText = app.staticTexts["quoteText"]
+        let quoteText = app.staticTexts["quoteText"]
         var author = ""
         
         for i in 0..<authors.count {
@@ -266,7 +266,7 @@ final class quietMIND_UITests: XCTestCase {
         let soundPickerBtn = app.buttons["SoundsPicker"]
         soundPickerBtn.tap()
         
-        var button = app.buttons["Creepy Kids"]
+        let button = app.buttons["Creepy Kids"]
         button.waitForExistence(timeout: 3)
         button.tap()
         soundPickerBtn.tap()
