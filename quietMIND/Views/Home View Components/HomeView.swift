@@ -10,9 +10,6 @@ import CoreData
 import Foundation
 
 struct HomeView: View {
-
-//    @State var secondScreenShown = false
-//    @State private var isSerialKiller = UserDefaults.standard.bool(forKey: "isSerialKiller")
     
     // state object?
     @ObservedObject var timerViewModel: TimerViewModel
