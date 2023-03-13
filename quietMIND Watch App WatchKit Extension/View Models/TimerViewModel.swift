@@ -14,10 +14,12 @@ class TimerViewModel: ObservableObject {
     
     @Published var timerModel: TimerModel = TimerModel()
     
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     var audioPlayer: AVAudioPlayer!
     
     init(){
         self.timerModel = timerModel
+        self.timerModel.timerVal = self.timerModel.timerVal
     }
     
     func startTimer(){
@@ -27,7 +29,7 @@ class TimerViewModel: ObservableObject {
     }
     
     func setInitTime(){
-        self.timerModel.initialTime = self.timerModel.timerVal
+        self.timerModel.timerVal *= 60
     }
     
     func timeString(time: Int) -> String {
@@ -44,6 +46,10 @@ class TimerViewModel: ObservableObject {
         return self.timerModel.chosenSound
     }
     
+    func getSounds() -> [String] {
+        return self.timerModel.soundsLight
+    }
+    
     func getInitialTime() -> Int {
         return self.timerModel.initialTime
     }
@@ -54,6 +60,10 @@ class TimerViewModel: ObservableObject {
     
     func pressPause() {
         self.timerModel.paused = !self.timerModel.paused
+    }
+    
+    func getTimes() -> [Int] {
+        return self.timerModel.times
     }
     
     func playSounds(_ sound: String){

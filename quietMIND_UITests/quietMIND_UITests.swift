@@ -7,8 +7,7 @@
 
 import XCTest
 
-// tests homepage
-// structure: GIVEN, WHEN, TTHEN
+// structure: GIVEN, WHEN, THEN
 final class quietMIND_UITests: XCTestCase {
     
     let app = XCUIApplication()

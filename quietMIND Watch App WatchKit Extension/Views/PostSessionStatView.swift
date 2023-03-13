@@ -47,6 +47,7 @@ struct PostSessionStatView: View {
                 .onTapGesture{
                     appState.rootViewId = UUID()
                 }
+                .accessibilityIdentifier("HomeBtn")
             }
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)

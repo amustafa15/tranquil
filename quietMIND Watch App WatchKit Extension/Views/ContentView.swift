@@ -15,6 +15,7 @@ struct ContentView: View {
     
     var body: some View {
         InitialView()
+            .environmentObject(appState)
             .id(appState.rootViewId)
     }
 }
